@@ -34,13 +34,13 @@ class SymtabExample {
 
 	// add a couple of entries mapping name to age.
 	// note the second argument must be a pointer to an integer
-	map.addId(fred, new Integer(33333));
-	map.addId(mary, new Integer(444));
+	map.addId(fred, new Integer(22));
+	map.addId(mary, new Integer(33));
 
 	// add a scope, add more names:
 	map.enterScope();
-	map.addId(miguel, new Integer(111111));
-	map.addId(mary, new Integer(3222222));
+	map.addId(miguel, new Integer(44));
+	map.addId(mary, new Integer(55));
 
 	// check whether Fred is in the current scope; predicate is false
 	System.out.println((map.probe(fred) != null) ? "Yes" : "No");
